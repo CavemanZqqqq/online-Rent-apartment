@@ -1,0 +1,40 @@
+.house .title {
+  font-size: 1rem;
+  font-weight: 700;
+  padding-left: 0.2rem;
+}
+.house .list {
+  padding-bottom: 5rem;
+}
+.house .list .item {
+  position: relative;
+  margin: 0.3rem auto;
+}
+.house .list .item .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3.4rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  padding: 0.3rem 4rem;
+}
+.house .list .item .info .desc {
+  flex: 2;
+  font-weight: 600;
+}
+.house .list .item .info .type {
+  text-align: center;
+  flex: 1;
+  font-weight: 600;
+}
+.house .list .item .info .type .zu {
+  border: solid 1px #187eb9;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.1rem;
+}
+.house .list .item .info .type .price {
+  color: #ff5555;
+}
+/*# sourceMappingURL=./House.module.css.map */

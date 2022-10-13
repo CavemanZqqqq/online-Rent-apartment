@@ -1,0 +1,28 @@
+.home-header {
+  display: flex;
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #f55555;
+}
+.home-header .address,
+.home-header .cart {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  width: 4rem;
+  margin-left: 0.4rem;
+}
+.home-header .address .city,
+.home-header .cart .city {
+  color: #fff;
+  font-size: 1rem;
+}
+.home-header .cart .iconfont {
+  font-size: 1.5rem;
+  color: white;
+}
+.search {
+  flex: 1;
+  color: #000011;
+}
+/*# sourceMappingURL=./index.css.map */

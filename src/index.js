@@ -1,17 +1,36 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+//链接redux（store）和 component
+import { Provider } from 'react-redux';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+//引入仓库
+import store from './store'
+
+//初始化样式
+import './asset/css/reset.css'
+
+import AppRouter from './router/AppRouter';
+import { setCityAction, setUserAction } from './store/action/actions';
+
+//从本地存储里取
+
+if(localStorage.getItem('city')) {
+    store.dispatch(setCityAction(localStorage.getItem('city')));
+}
+
+if(localStorage.getItem('username')) {
+    store.dispatch(setUserAction(localStorage.getItem('username')));
+}
+
+
+ReactDOM.render(
+
+<Provider store={store}>
+
+<AppRouter/>
+
+</Provider>
+,document.getElementById('root'))
+

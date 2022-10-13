@@ -1,0 +1,32 @@
+.cart-list .outer {
+  border-bottom: 1px solid #ccc;
+}
+.cart-list .outer .cart-item {
+  display: flex;
+  padding: 0.5rem;
+}
+.cart-list .outer .cart-item .cart-img {
+  flex: 2;
+  width: 4rem;
+  height: 4rem;
+}
+.cart-list .outer .cart-item .cart-info {
+  flex: 2;
+  margin-left: 0.5rem;
+}
+.cart-list .outer .cart-item .comment-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.cart-list .outer .cart-item .comment-btn div {
+  height: 2rem;
+  background-color: #ff5555;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+.cart-list .outer .cart-item .comment-btn .gray {
+  background-color: gray;
+  font-size: 7px;
+}
+/*# sourceMappingURL=./index.css.map */
